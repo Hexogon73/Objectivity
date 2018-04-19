@@ -12,6 +12,9 @@ class Button(BaseElement):
         self._locator = locator
         self._timeout = timeout
 
+    def get_locator(self):
+        return self._locator
+
     def wait_button_is_enable(self, timeout=_timeout):
         BaseElement.wait_element_is_enable(self._locator, timeout)
 
