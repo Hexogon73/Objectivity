@@ -5,7 +5,7 @@ from robot.libraries.BuiltIn import BuiltIn
 class BaseElement(object):
 
     _locator = ''
-    _timeout = ''
+    _timeout = 0
 
     def __init__(self, locator, timeout=None):
         self._locator = locator
