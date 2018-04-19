@@ -3,12 +3,6 @@ Documentation    Suite description
 Library  page_objects.IndexPage
 
 *** Test Cases ***
-Test title
+Test click blog button
     [Tags]    DEBUG
-    Provided precondition
-    When action
-    Then check expectations
-
-*** Keywords ***
-Provided precondition
-    Setup system under test
+    Search Button.Button Click

@@ -2,3 +2,4 @@ venv
 .idea/misc.xml
 .idea/workspace.xml
 /venv/
+/report/
