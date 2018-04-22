@@ -9,4 +9,4 @@ class IndexPageHelper:
 
     @staticmethod
     def click_search_button():
-        IndexPage.header_menu.search_button.button_click(20)
+        IndexPage.header_menu.search_button.link_click(20)

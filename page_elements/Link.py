@@ -22,5 +22,5 @@ class Link(BaseElement):
         BaseElement.wait_element_is_enable(self._locator, timeout)
 
     def link_click(self, timeout=_timeout):
-        self.wait_element_is_enable()
-        self._seleniumlib().click_element(self._locator, timeout)
+        self.wait_element_is_enable(timeout)
+        self._seleniumlib().click_element(self._locator)

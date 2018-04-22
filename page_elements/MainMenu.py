@@ -13,7 +13,7 @@ class MainMenu(object):
     literature = Button(locator_menu + "//a[text()='Литература']")
     site_map_button = Button(locator_menu + "//a[text()='Карта сайта']")
     # //ul[@class='nav-menu']//a[text()='Карта сайта']
-    search_button = Button("xpath=//div[@class='search-toggle']", 20)
+    search_button = Link("xpath=//div[@class='search-toggle']", 20)
 
     # ---  search form  ---
     search_form = "xpath=//div[@id='search-box']"
