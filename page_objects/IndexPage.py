@@ -4,6 +4,10 @@ from BasePage import BasePage
 
 
 class IndexPage(BasePage):
+    """
+    Модель главной страницы сайта
+    """
+
     header_menu = MainMenu()
 
     @staticmethod
