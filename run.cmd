@@ -1,1 +1,1 @@
-robot -d report tests
+robot --loglevel TRACE -d report tests

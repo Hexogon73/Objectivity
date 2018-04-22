@@ -1,8 +1,16 @@
+# -*- coding: utf-8 -*-
 *** Settings ***
 Documentation    Suite description
-Library  page_objects.IndexPage
+#Library  page_objects.IndexPage
+Library  helpers.BrowserManager
+Library  helpers.IndexPageHelper
+Variables  ../variables/global.py
+Library  Selenium2Library
+
+Suite Setup  Open Test Browser
+#Suite Teardown  Close Test Browser
 
 *** Test Cases ***
-Test click blog button
+Test click search button
     [Tags]    DEBUG
-    Search Button.Button Click
+    Click Search Button

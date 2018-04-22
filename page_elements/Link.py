@@ -2,12 +2,11 @@
 from BaseElement import BaseElement
 
 
-class Button(BaseElement):
+class Link(BaseElement):
     """
-    Инкапсулирует в себе методы работы с кнопкой
+    Инкапсулирует в себе методы работы с ссылкой
     При создании экземпляра присваивает значения локатора и таймаута переданные в конструктор
     """
-
     _locator = ''
     _timeout = 0
 
@@ -19,9 +18,9 @@ class Button(BaseElement):
     def get_locator(self):
         return self._locator
 
-    def wait_button_is_enable(self, timeout=_timeout):
+    def wait_link_is_enable(self, timeout=_timeout):
         BaseElement.wait_element_is_enable(self._locator, timeout)
 
-    def button_click(self, timeout=_timeout):
+    def link_click(self, timeout=_timeout):
         self.wait_element_is_enable()
-        self._seleniumlib().click_button(self._locator, timeout)
+        self._seleniumlib().click_element(self._locator, timeout)

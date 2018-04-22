@@ -5,4 +5,4 @@ from BasePage import BasePage
 
 
 class IndexPage(BasePage):
-    header = MainMenu()
+    header_menu = MainMenu()
