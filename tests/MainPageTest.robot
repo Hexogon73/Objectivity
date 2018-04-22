@@ -5,7 +5,6 @@ Library  page_objects.SubscriptionPopup
 Library  page_objects.IndexPage
 Library  helpers.BrowserManager
 Variables  ../variables/global.py
-Library  Selenium2Library
 
 Suite Setup  Open Test Browser
 #Suite Teardown  Close Test Browser
