@@ -4,6 +4,10 @@ from BasePage import BasePage
 
 
 class SubscriptionPopup(BasePage):
+    """
+    Модель всплывающего окна с предложением подписаться
+    """
+
     close_button = Link("xpath=//div[contains(@class,'popup')]//a[contains(@class,'close')]")
 
     @staticmethod

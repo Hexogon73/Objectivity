@@ -7,6 +7,9 @@ def _seleniumlib():
 
 
 class BrowserManager:
+    """
+    Вспомогательный класс для работы с браузером
+    """
 
     def __init__(self):
         pass
